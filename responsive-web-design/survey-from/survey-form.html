@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Boutique Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="intro">
+      <h1 class="title">Bunny Boutique</h1>
+      <img src="rabbit.png" alt="Bunny Boutique Logo" width="25px">
+      <p class="description">Thank you for choosing Bunny Boutique. Please rate your experience.</p>
+    </section>
+    <section>
+      <form class="survey-form">
+        <article class="name">
+          <label id="name-label">Name</label><br>
+          <input  id="name" type="text" name="name" placeholder="Enter your name" required>
+        </article>
+        <article class="email">
+          <label id="email-label">Email</label><br>
+          <input  id="email" type="email" name="email" placeholder="Enter your email" required>
+        </article>
+        <article class="number">
+          <label id="number-label">How many people was in your party?</label><br>
+          <input  id="number" type="number" name="number" min="1" max="20" placeholder="Enter a number" required>
+        </article>
+        <article class="location">
+          <label for="dropdown">Which Bunny Boutique location did you visit?</label><br>
+          <select class="dropdown" name="location">
+            <option value="Santa Clara, CA">Santa Clara, CA</option>
+            <option value="San Gabriel, CA">San Gabriel, CA</option>
+            <option value="San Jose CA">San Jose, CA</option>
+          </select>
+        </article>
+        <article class="service">
+          <p>What services did you get?</p>
+          <input type="checkbox" id="service1" name="service1" value="mani">
+          <label for="service1">Manicure</label><br>
+          <input type="checkbox" id="service2" name="service2" value="pedi">
+          <label for="service1">Pedicure</label><br>
+          <input type="checkbox" id="service3" name="service3" value="head">
+          <label for="service1">Head Spa</label><br>
+          <input type="checkbox" id="service4" name="service4" value="face">
+          <label for="service1">Facial</label><br>
+        </article>
+        <article class="rating_bttn">
+          <p>How satisfied were you with the services?</p>
+          <input type="radio" id="1" name="rating_bttn" value="not satisfied" checked>
+          <label for="1">Not Satisfied</label><br>
+          <input type="radio" id ="2" name="rating_bttn" value="somewhat satisfied">
+          <label for="2">Somewhat Satisfied</label><br>
+          <input type="radio" id="3" name="rating_bttn" value="satisfied">
+          <label for="3">Satisfied</label><br>
+          <input type="radio" id ="4" name="rating_bttn" value="very satisfied">
+          <label for="4">Very Satisfied</label><br>
+        </article>
+        <article class="refer">
+          <p>Will you recommend Bunny Boutique to your friends?</p>
+          <input type="radio" id="yes" name="refer" value="yes" checked>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="'refer" value="no">
+          <label for="no">No</label>
+        </article>
+        <artice class="addtional_comment">
+          <label for="addtional_comment">Additional Comment</label><br>
+          <textarea id="addtional_comment" name="addtional_comment"></textarea>
+        </artice>
+        <article class="submit_bttn">
+          <input type="submit">
+        </article>
+      </form>
+    </section>
+  </body>
+  <footer>
+    <img src="rabbit.png" alt="Bunny Boutique Logo" width="25px">
+    <h3><strong>Bunny Boutique</strong></h3>
+  </footer>
+</html>

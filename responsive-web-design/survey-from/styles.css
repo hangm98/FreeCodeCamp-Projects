@@ -1,0 +1,64 @@
+body, footer {
+  background-color: cornsilk;
+  align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 5px;
+  line-height: 0.05px;
+  color: darkred;
+}
+
+img {
+  margin: 0% 50%;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  color: darkred;
+  font-size: 40px;
+  margin-bottom: 3px;
+}
+
+.description {
+  text-align: center;
+  color: darkred;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.survey-form {
+  align-items: center;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding: 20px;
+  background-color: rgba(250, 250, 210, 0.623);
+  line-height: 2.5;
+}
+
+.name input, .email input, .number input {
+  width: 100%;
+}
+
+.rating_bttn p, .refer p, .service p {
+  margin-bottom: -1px;
+}
+
+textarea {
+  justify-self: auto;
+  width: 100%;
+  height: 100px;
+}
+
+.submit_bttn input{
+  margin: 0% 46%;
+  cursor: pointer;
+  background-color: lightgreen;
+  font-weight: bold;
+  border-width: 0px;
+  padding: 15px 30px
+}
