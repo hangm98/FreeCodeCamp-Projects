@@ -7,33 +7,253 @@
     <title>Technical Documentation Page Project</title>
   </head>
   <body>
-    <main id="main-doc">
-      <section class="main-section"  id="intro">
-        <header>Windows Command Prompt</header>
-      
-      </section>
-      <section class="main-section" id="shortcut">
-        <header>Shortcut Key</header>
-      </section>
-      <section class="main-section" id="file">
-        <header>File Management</header>
-      </section>
-      <section class="main-section"  id="disk">
-        <header>Disk Management</header>
-      </section>
-      <section class="main-section" id="system">
-        <header>System Information</header>
-      </section>
-    </main>
     <nav id="nav-bar">
-      <header>CMD</header>
+      <header>CMD Cheatsheet</header>
       <ul>
         <li><a href="#intro">What is Windows CMD?</a></li>
         <li><a href="#shortcut">Shortcut Key</a></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="#directory">Directory Navigation</a></li>
+        <li><a href="#file">File Management</a></li>
+        <li><a href="disk">Disk Management</a></li>
+        <li><a href="system">System Information</a></li>
       </ul>
-    </nav>  
+    </nav>
+    <main id="main-doc">
+      <section class="main-section"  id="intro">
+        <header>Windows Command Prompt</header>
+        <p>The Command Prompt on Windows is useful for everything from complex automation to network configuration. It provides over
+          208 commands that can be used to do certain operating system tasks from a command-line intepreter.</p>
+        <p>The complete lists of all command can be found on <a href="https://ss64.com/nt/">ss64 website</a>. This is a cheatsheet that will
+        list some common useful commands.</p>
+        <p>To get started, we first need to open the command-line intepreter. Windows OS has a <span>Command Prompt app</span>
+        already installed. </p>
+        <code>⊞Win + R → cmd → Enter</code>
+      </section>
+      <section class="main-section" id="shortcut">
+        <header>Shortcut Key</header>
+        <p>Here are some shortcut key combinations to help you navigate the console easier.</p>
+        <ul>
+          <li><div><p>Tab</p><p>Autocomplete</p></div></li>
+          <li><div><p>Ctrl + F</p><p>Find text in console</p></div></li>
+          <li><div><p>F1, F3, F5, F8</p><p>Retype command</p></div></li>
+          <li><div><p>F2</p><p>Copy the command on the left of cursor</p></div></li>
+          <li><div><p>F4</p><p>Delete the command on the right of cursor</p></div></li>
+          <li><div><p>F6</p><p>Insert end-of-file character</p></div></li>
+          <li><div><p>F7</p><p>List previous commands</p></div></li>
+          <li><div><p>F9</p><p>Retype a command by line number</p></div></li>
+        </ul>
+      </section>
+      <section class="main-section" id="directory">
+        <header>Directory Navigation</header>
+        <code>
+          <table>
+            <tr>
+              <td>c:</td>
+              <td>Change directory to C:\ drive</td>
+            </tr>
+            <tr>
+              <td>d:</td>
+              <td>Change directory to D:\ drive</td>
+            </tr>
+            <tr>
+              <td>cd [folder/path]</td>
+              <td>Change to one of its children or specified path</td>
+            </tr>
+            <tr>
+              <td>cd ..</td>
+              <td>Change back to parent of the current working directory</td>
+            </tr>
+            <tr>
+              <td>dir</td>
+              <td>displays files and folders in current directory</td>
+            </tr>
+            <tr>
+              <td>move [source] [des]</td>
+              <td>Move files</td>
+            </tr>
+            <tr>
+              <td>md [new_folder]<br>makedir [new_folder]</td>
+              <td>Make a new folder in current directory</td>
+            </tr>
+            <tr>
+              <td>rd [folder]<br>rmdir [folder]</td>
+              <td>Delete a folder in current directory</td>
+            </tr>
+            <tr>
+              <td>tree [path]</td>
+              <td>Show the structure of the disk or folder</td>
+            </tr>
+          </table>
+        </code>
+      </section>
+      <section class="main-section" id="file">
+        <header>File Management</header>
+        <p>Like Unix, cmd supports pipelines: you may pass the output of a command to 
+          the next one by sandwiching the pipe character “|” between both.</p>
+        <code>
+          <table>
+            <tr>
+              <td>copy [file] [des]</td>
+              <td>Copy file to specified destionation path</td>
+            </tr>
+            <tr>
+              <td>del [file]<br>erase [file]</td>
+              <td>Delete  file</td>
+            </tr>
+            <tr>
+              <td>ren [file] [new_name]<br>rename [file] [new_name]</td>
+              <td>Rename file</td>
+            </tr>
+            <tr>
+              <td>replace [original_file_path] [directory_of_other_file]</td>
+              <td>Overwrite the file in [original_file_path] with another file. Both files<br>
+              must have the same name.</td>
+            </tr>
+            <tr>
+              <td>expand [file]</td>
+              <td>Decompress a compressed/zipped file</td>
+            </tr>
+            <tr>
+              <td>print [file]</td>
+              <td>Print content of file to console</td>
+            </tr>
+            <tr>
+              <td>notepad [file_name]</td>
+              <td>Open Notepad app or create new empty file then open Notepad app</td>
+            </tr>
+            <tr>
+              <td>code [file_name]</td>
+              <td>Open code editor app or create new empty file then open code editor app</td>
+            </tr>
+          </table>
+        </code>
+      </section>
+      <section class="main-section"  id="disk">
+        <header>Disk Management</header>
+        <code>
+          <table>
+            <tr>
+              <td>chkdsk</td>
+              <td>Check and repair a disk problems (local disks only)</td>
+            </tr>
+            <tr>
+              <td>chkdsk /f [disk]</td>
+              <td>Fix errors on specified disk</td>
+            </tr>
+            <tr>
+              <td>chkdsk /r [disk]</td>
+              <td>Recover data on specified disk</td>
+            </tr>
+            <tr>
+              <td>chkdsk /x [disk]</td>
+              <td>Dismount specified disk</td>
+            </tr>
+            <tr>
+              <td>cipher /e [file]</td>
+              <td>Encrypt a file/folder</td>
+            </tr>
+            <tr>
+              <td>cipher /d [file]</td>
+              <td>Decrypt a file/folder</td>
+            </tr>
+            <tr>
+              <td>defrag</td>
+              <td>Disk defragmentation</td>
+            </tr>
+            <tr>
+              <td>chkntfs</td>
+              <td>Display/modify disk-checking on startup</td>
+            </tr>
+            <tr>
+              <td>compact</td>
+              <td>Display/change the compression of files in NTFS partitions</td>
+            </tr>
+            <tr>
+              <td>convert</td>
+              <td>Convert FAT disk volume to NTFS</td>
+            </tr>
+            <tr>
+              <td>diskpart</td>
+              <td>Display and adjust disk partition properties</td>
+            </tr>
+            <tr>
+              <td>format</td>
+              <td>Format the disk</td>
+            </tr>
+            <tr>
+              <td>fsutil</td>
+              <td>File system management</td>
+            </tr>
+            <tr>
+              <td>vol</td>
+              <td>Display current disk volume label and serial number</td>
+            </tr>
+            <tr>
+              <td>sfc /scannow</td>
+              <td>Scan and update protected system files</td>
+            </tr>
+          </table>
+        </code>
+      </section>
+      <section class="main-section" id="system">
+        <header>System Information</header>
+        <code>
+          <table>
+            <tr>
+              <td>ver</td>
+              <td>Display the current operating system version</td>
+            </tr>
+            <tr>
+              <td>systeminfo</td>
+              <td>List system configuration</td>
+            </tr>
+            <tr>
+              <td>hostname</td>
+              <td>Show the computer's hostname on the network</td>
+            </tr>
+            <tr>
+              <td>driverquery</td>
+              <td>Show all installed device drivers</td>
+            </tr>
+            <tr>
+              <td>date<br>time</td>
+              <td>Display/set system date or time</td>
+            </tr>
+            <tr>
+              <td>powercfg</td>
+              <td>Control power settings and configure Hibernate/Standby modes</td>
+            </tr>
+            <tr>
+              <td>shutdown /s<br>[optional]/t [time]</td>
+              <td>Shutdown computer after specified time</td>
+            </tr>
+            <tr>
+              <td>shutdown /r</td>
+              <td>Restart computer</td>
+            </tr>
+            <tr>
+              <td>tasklist</td>
+              <td>List running tasks</td>
+            </tr>
+            <tr>
+              <td>taskkill</td>
+              <td>End one or more tasks</td>
+            </tr>
+            <tr>
+              <td>start [program]</td>
+              <td>Open a program in new window</td>
+            </tr>
+            <tr>
+              <td>help</td>
+              <td>Open help in console</td>
+            </tr>
+            <tr>
+              <td>exit</td>
+              <td>Exit the console</td>
+            </tr>
+          </table>
+        </code>
+      </section>
+    </main>  
   </body>
 </html>
