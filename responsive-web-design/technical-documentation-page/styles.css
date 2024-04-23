@@ -1,5 +1,92 @@
 * {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
+  background-color: antiquewhite;
 }
+
+body {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+}
+
+hr {
+  margin-top: 2%;
+  margin-left: -2%;
+  border: 0.5px solid burlywood
+}
+
+#nav-bar {
+  margin-left: 0;
+  padding-right: 2%;
+}
+
+@media only screen and (min-width: 815px) {
+  /* For mobile */
+  ul {
+    display: grid;
+    grid-template-rows: max-content;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+#nav-bar li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid burlywood;
+  margin-bottom: 10%;
+  padding-bottom: 10%;
+  margin-left: -20%;
+  padding-left: 20%;
+}
+
+#nav-bar li a:hover, #nav-bar li a:active {
+  text-decoration: underline;
+} 
+
+#nav-bar header {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#main-doc {
+  margin-left: auto;
+  padding-left: 2%;
+  border-left: 2px solid burlywood;
+}
+
+#main-doc header {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#intro code{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(64, 64, 64);
+  display: block;
+  border: 1px solid darkgray;
+  background-color: rgb(248, 248, 248);
+  margin-left: 20%;
+  margin-right: auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(64, 64, 64);
+  background-color: rgb(248, 248, 248);
+  border: 1px solid darkgray;
+}
+
+#shortcut li div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 
