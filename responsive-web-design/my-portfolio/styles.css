@@ -1,0 +1,82 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 5vh;
+  width: 100vw;
+  background-color: #ddb6b3;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#navbar a {
+  font-size: 25px;
+  color: black;
+  display: block;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+#welcome-section {
+  align-content: center;
+  background-color: #f8d4df;
+  padding: 3% 0;
+}
+
+h1 {
+  display: block;
+  color: #533a32;
+  font-size: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+#welcome-section h3 {
+  display: block;
+  color: #533a32;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#welcome-section img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+#projects {
+  background-color: #f2d6c7;
+}
+
+#projects h3 {
+  color:#533a32;
+  display: block;
+  text-align: center;
+  padding-top: 15%;
+  text-decoration: underline dashed #533a32 3px;
+  text-underline-offset: 10px;
+}
+
+#contact {
+  background-color: #f8d4df;
+}
