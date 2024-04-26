@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: rgba(255, 218, 185, 0.812);
+  width: 100vw;
+}
+
+.title {
+  text-align: center;
+  margin: 3rem;
+  font-size: 2rem;
+}
+
+.sub {
+  display: block;
+  padding: 1rem 1rem;
+  margin:  -2rem 5rem 3rem;
+  background-color: rgb(248, 207, 158);
+  border-radius: 90%;
+}
+
+.sub span {
+  font-weight: 600;
+  color: rgb(118, 2, 2);
+}
+
+.main {
+  text-align: center;
+  line-height: 2;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgba(248, 208, 158, 0.503);
+  margin: 0 10rem;
+  padding: 2rem;
+  border-radius: 10%;
+}
+
+#text-input {
+  width: 10rem;
+  height: 3rem;
+  border: 0.1rem solid rgb(242, 135, 5);
+  border-radius: 5%;
+  box-sizing: border-box;
+  margin: 0.5rem 1rem;
+}
+
+#check-btn {
+  width: 5rem;
+  height: 2.5rem;
+  border: 0.1rem solid rgb(242, 135, 5);
+  border-radius: 5%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  background-color: rgb(248, 207, 158);
+}
+
+#check-btn:hover, #check-btn:active {
+  cursor: pointer;
+  background-color: rgb(242, 135, 5);
+}
+
+#result {
+  display: flex;
+  margin-left: 30%;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
