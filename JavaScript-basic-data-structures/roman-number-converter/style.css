@@ -1,0 +1,42 @@
+body {
+  background-color: rgba(73, 72, 72, 0.644);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 2;
+}
+
+.main-body {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+}
+
+.title {
+  flex: 1 1 auto;
+  font-size: 1.5rem;  
+  text-align: center;
+  margin: 1rem auto -30rem;
+}
+
+.main {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+}
+
+#number, #output {
+  height: 3rem;
+  text-align: start;
+  margin: 1rem auto;
+}
+
+button {
+  padding: 1rem;
+  margin: auto;
+}
