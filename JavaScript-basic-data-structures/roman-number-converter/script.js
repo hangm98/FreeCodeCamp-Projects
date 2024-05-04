@@ -41,36 +41,29 @@ function checkValid(val) {
     throw 'Please enter a number less than or equal to 3999';
     throw convertNum(val)
   }
-  catch(err) {
-    error.innerHTML = err;
+  catch(str) {
+    error.innerHTML = str;
     output.appendChild(error);
   }
 }
 
 function convertNum(val) {
-  let value = val;
-  let temp = 0;
-  let div = 1000;
+  let temp = val;
+  let quotient = 0;
   let str = '';
-  do {
-    temp = (value / div) * div;
-    if (roman_num.has(temp)) {
-      str += roman_num.get(temp);
-    }
-    else if (temp > div && temp < (div*4)) {
-      let print = temp - div;
-      for (let i = 0; i < print; i++) {
-        str += roman_num.get(div);
+  //Sort map in descending order
+  const new_map = new Map([...roman_num].sort((a,b) => b[0] - a[0]));
+  /*Algorithm: if value >= number, divide and get quotient and remainder, print out the subtract number from quotient and
+  print symbol that many times. Repeat until remainder is 0. */
+    new_map.forEach((keys, values) => {
+      if (temp >= values) {
+        quotient = Math.floor(temp/values);
+        temp = temp % values;
+        for (let i = 0; i < quotient; i++) {
+          str += keys;
+        }
       }
-    }
-    else if (temp > (div*5) && temp < (div*9)) {
-      let print = temp - (div*5);
-      for (let i = 0; i < print; i++) {
-        str += roman_num.get(div*5);
-      }
-    }
-    div /= 10;
-  }
-  while (temp >= 1);
+      if (temp === 0) { return; }
+    })
   return str;
 }
